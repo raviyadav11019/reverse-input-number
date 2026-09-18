@@ -16,3 +16,14 @@ int main(){
 
     return 0;
 }
+// code will run for 
+/*
+121
+-345
+48643878
+
+the value for running code is limited
+by making if statement although 
+that range is too much 
+
+*/
