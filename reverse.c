@@ -1,14 +1,18 @@
 #include<stdio.h>
 int main(){
-    int num,a,b,rem=0;
+    int num,a,b,x;
     printf("Enter your number: ");
-    scanf("%d",&num);
-    b=num;
-    while(b>0){
-        a=b%10;
-        rem=rem*10+a;
-        b=b/10;
+    scanf("%d",&x);
+    long long reverse=0;
+    while(x!=0){
+        a=x%10;
+        reverse=reverse*10+a;
+        x=x/10;   
     }
-    printf("The reverse Number %d is %d \n",num,rem);
+    if (reverse > 2147483647 || reverse < -2147483648)
+        return 0;
+    else 
+    printf("%lld\n",reverse);
+
     return 0;
 }
